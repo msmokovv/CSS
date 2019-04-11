@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> CSS-3</title>
+		<style type="text/css">
+			body
+			{
+				background-image: url('http://www.flashmint.com/free/images/twbg4-700.jpg');
+				background-position: left top;
+				background-repeat:no-repeat;
+				background-size:100%;
+				background-attachment:fixed;
+			}
+
+			#main
+			{
+				width: 80%;
+				margin: auto;
+				border: 1px solid black;
+				background-color:rgba(255,255,255, 0.6);
+			}
+
+			#menu
+			{
+				text-align: center;
+				position: fixed;
+				border: 1px solid black;
+				width: 77%;
+				background-color: lightgreen;			
+			}
+			a 
+			{
+				margin-right: 10px;
+			}
+
+			#content
+			{
+				border: 1px solid black;		
+				padding: 20px;	
+				padding-top: 40px;
+			}
+
+			#footer
+			{
+				border: 1px solid black;
+			}
+			.right
+			{
+				float: right;
+				margin-right: 20px;
+			}
+			#nested
+			{
+				border: 1px solid black;
+				display: inline-block;	
+				width: 80%;	
+				height: 105%;
+				margin-left: 20px;	
+				background-image: url('http://hairpro.bg/image/data/background/back_7.png');
+				border-left-color: blue;
+			}
+			
+			#nested table
+			{
+				background-color: rgba(0,120,0,0.2);
+				border-right-color: red;
+				border-bottom-style: dashed;
+			}
+			
+			img
+			{
+				width: 15%;
+				border-style: dashed;
+				vertical-align: top;
+				border-right-style: ridge;
+				border-right-width: 6px;
+			    cursor:not-allowed;
+			}
+			
+			td, th
+			{
+				border: 1px solid black;
+			}
+			
+			table
+			{
+				border: 10px solid black;
+				border-collapse: separate;
+				border-spacing: 5px 15px;
+				border-style: ridge;
+				empty-cells: show;
+				width: 90%;
+				margin: auto;
+				margin-top: 10px;
+			}
+
+			a:hover
+			{
+				border-style: dashed;
+				border-color: red;
+			}
+			
+			caption
+			{
+				caption-side: bottom;
+			}
+			
+			ol.armenian
+			{
+				list-style-type:hiragana-iroha;
+				list-style-position:inside;
+			}
+			#info
+			{
+				margin-bottom: 25px;
+				/* display: none; no place is saved for the table */
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="menu">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<a href="#">Link 4</a>
+				<a href="#">Link 5</a>
+				Широчина 77%
+			</div>
+			<div id="content">
+				<img src="http://memoirdesign.typepad.com/memoir_design/images/2007/04/27/stein_spencer_beach_300_copy.jpg" alt="The picture can't be displayed" />
+				<div id="nested">
+					<table id="info">
+					  <tr>
+					    <th>Firstname</th>
+					    <th>Lastname</th>
+					    <th>Age</th>
+					  </tr>
+					  <tr>
+					    <td>Jill</td>
+					    <td>Smith</td>
+					    <td>50</td>
+					  </tr>
+					  <tr>
+					    <td>Eve</td>
+					    <td>Jackson</td>
+					    <td>94</td>
+					  </tr>
+					  <tr>
+					    <td>John</td>
+					    <td>Doe</td>
+					    <td>80</td>
+					  </tr>
+					</table>
+					Широчина 80% и височина 105%
+					<table>
+						<caption> Table: Table with transparent background-color широчина 90% </caption>
+						<tr>
+							<td> some text</td>
+						</tr>	
+						<tr>
+							<td> some text</td>
+						</tr>
+						<tr>
+							<td> some text</td>
+						</tr>
+						<tr>
+							<td> some text</td>
+						</tr>
+						<tr>
+							<td> some text</td>
+						</tr>
+					</table>
+					<ol class="armenian right"> Ordered list with armenian style
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+						<li>item 4</li>
+					</ol>
+				</div>
+			</div>
+			<div id="footer">
+				Contact details...All rights are reserved<span class="right">MSmokov &copy;</span>
+			</div>
+		</div>
+	</body>
+</html>
