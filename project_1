@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Lecture 2 CSS</title>
+		<style>
+			body {
+				background-image: url("http://www.happybirthday.quotesms.com/images/cake-with-name/chocolate-cake.jpg");
+				background-repeat: no-repeat;
+				background-position: right center;
+				background-size: 200px;
+				background-attachment: fixed;
+			}
+
+			.nav {
+				border: 3px solid pink;
+				background-color: #0000FF;
+				text-align: RIGHT;
+				word-spacing: 25px;
+			}
+
+			a:link {
+				text-decoration: none;
+				font-size: 2em;
+				font-weight: bold;
+				color: #1A0033;
+			}
+
+			a:hover {
+				text-shadow: 10px 10px 3px #4D0028;
+				color: white;
+			}
+
+			a:active {
+				color: yellowgreen;
+			}
+
+			img {
+				width: 200px;
+				border: 2px dotted #CC33FF;
+			}
+
+			#forest {
+				background-image: url("https://cdn.pixabay.com/photo/2014/12/22/00/07/tree-576847_960_720.png");
+				background-size: 60px;
+				background-repeat: repeat-x;
+				background-position: bottom;
+				background-attachment: fixed;
+				height: 150px;
+				position: fixed;
+				left: 0px;
+				bottom: 10px;
+				width: 100%;
+			}
+
+			#pets td {
+				font-family: Arial;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="nav">
+			<a href="http://www.abv.bg" target="_blank">Start</a>
+			<a href="http://www.webacademy.bg">Stop</a>
+			<a href="http://www.google.bg">Repeat</a>
+			<a href="http://www.vbox7.com">Pause</a>
+		</div><br /><br />
+
+		<div>
+			<table border="1" cellspacing="0" cellpadding="3" id="pets">
+				<caption align="bottom">My Favorite Pets</caption>
+
+				<tr>
+					<th></th>
+					<th>Data</th>
+					<th>Photo</th>
+					<th rowspan="7"><img src="http://lorempixel.com/300/700/nature/" alt="lake" /></th>
+				</tr>
+
+				<tr>
+					<th>Name</th>
+					<td>Jerry</td>
+					<td rowspan="2"><img src="https://www.jax.org/-/media/jaxweb/images/jax-mice-and-services/mice/web_0009_find-and-order-jax-mice.jpg?h=316&w=467&la=en&hash=D42556D3A616EC2E099378DB9CA5403D0C38C1E4" alt="mice" /></td>
+				</tr>
+
+				<tr>
+					<th>Age</th>
+					<td>3 years</td>
+				</tr>
+
+				<tr>
+					<th>Name</th>
+					<td>Aress</td>
+					<td rowspan="2"><img height="150px" src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/dog-medium-landing-hero.ashx" alt="dog" /></td>	
+				</tr>
+
+				<tr>
+					<th>Age</th>
+					<td>2 years</td>
+				</tr>
+
+				<tr>
+					<th>Name</th>
+					<td>Tommy</td>
+					<td rowspan="2"><img src="https://www.petfinder.com/wp-content/uploads/2012/11/91615172-find-a-lump-on-cats-skin-632x475.jpg" alt="cat" /></td>
+				</tr>
+
+				<tr>
+					<th>Age</th>
+					<td>1 year</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="forest"></div>
+	</body>
+</html>
