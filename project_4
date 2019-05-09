@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS_1</title>	
+		<style>
+			.bigBox
+			{
+				border: 1px solid red;
+				width: 250px;
+				height: 250px;
+				background-color: green; 	
+				position: fixed;		
+			}
+			
+			#topLeft
+			{
+				top: 0;
+				left: 0;
+			}
+			
+			#bottomLeft
+			{
+				bottom: 0;
+				left: 0;			
+			}
+			
+			#topRight
+			{
+				top: 0;
+				right: 0;
+			}
+			
+			#bottomRight
+			{
+				bottom: 0;
+				right: 0;			
+			}
+			#myFrame
+			{
+				top: 100px;
+				left: 252px;
+				right: 257px;
+				bottom: 30px;
+				position: fixed;
+				z-index: 0;
+			}
+			
+			iframe
+			{
+				width: 100%;
+				height: 100%;
+			}
+			#square
+			{
+				top: 125px;
+				left: 127px;
+				border: 1px solid red;		
+				background-color: blue;
+				z-index: 0;
+				position: fixed;	
+				width: 150px;
+				height: 110px;
+			}
+			
+			#bottomInfo
+			{
+				position: fixed;
+				background-color: grey;
+				z-index: 3;
+				left: 252px;
+				right: 252px;
+				bottom: 0px;
+				height: 25px;
+				color: pink;
+				text-align: center;
+						
+			}
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div id="topLeft" class="bigBox"></div>
+		<div id="topRight" class="bigBox"></div>
+		<div id="bottomLeft" class="bigBox"></div>
+		<div id="bottomRight" class="bigBox"></div>
+		<div id="myFrame"><iframe src="http://google.com/">iframe not supported</iframe></div>	
+		<div id="square"></div>
+		<div id="bottomInfo">google&reg;</div>
+	</body>
+</html>
