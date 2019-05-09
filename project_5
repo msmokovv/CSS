@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="ex10.css">
+	<style> 
+		.spanClass {
+		    border: 1px solid yellow;
+		    background-color: rgba(255,255,123,0.5);
+		    z-index: 2;
+		    position: relative;
+		    bottom: 1px;
+		    font-weight: bold;
+		    font-size: 1cm;
+		}
+
+		.testClass{
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: gray;
+			z-index: 1;
+		}
+		.testClass:hover, .spanClass:hover {
+			color: pink;
+		}
+		#test2{
+			background-color: Maroon;
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		<p id="test2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et finibus est.  Praesent elementum diam ut orci vestibulum, vel malesuada tortor finibua sdas ndbvasj dbavsj dva sjdv s. 
+		<span class="spanClass">Sed eu mattis nibh, ac maximus diam.</span></p>
+		<span class="testClass"> In eleifend, quam quis scelerisque maximus, turpis nisl consecteturlectus eget est.</span>
+		<p> In eleifend, quam quis scelerisque maximus, turpis nisl consectetur massa, nec fermentum nunc lectus eget est.</p>
+		<p style="color: red;">Suspendisse in nibh sapien. Etiam at justo turpis. Maecenas tincidunt placerat mauris, non ullamcorper orci. Donec semper ac orci sed iaculis. Nunc eu nisl risus. </p>
+		<p> In eleifend, quam quis scelerisque maximus, turpis nisl consectetur massa, nec fermentum nunc lectus eget est.</p>
+		<p>Suspendisse in nibh sapien. Etiam at justo turpis. Maecenas tincidunt placerat mauris, non ullamcorper orci. Donec semper ac orci sed iaculis. Nunc eu nisl risus. </p>
+		<p class="spanClass"> In eleifend, quam quis scelerisque maximus, turpis nisl consectetur massa, nec fermentum nunc lectus eget est.</p>
+		<p>Suspendisse in nibh sapien. Etiam at justo turpis. Maecenas tincidunt placerat mauris, non ullamcorper orci. Donec semper ac orci sed iaculis. Nunc eu nisl risus. </p>
+		<p> In eleifend, quam quis scelerisque maximus, turpis nisl consectetur massa, nec fermentum nunc lectus eget est.</p>
+		<p class="testClass">Suspendisse in nibh sapien. Etiam at justo turpis. Maecenas tincidunt placerat mauris, non ullamcorper orci. Donec semper ac orci sed iaculis. Nunc eu nisl risus. </p>
+	</div>
+</body>
+</html>
