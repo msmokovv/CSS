@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>css2</title>
+		<style>
+			a:link{ color: darkblue; }
+			a:visited{ color: lightblue; }
+			a:hover{ color: navy; }
+			a:active{ color: pink; }
+			#logo{
+				text-transform: capitalize;
+				text-align: center;
+				font-size: 36px;
+				font-variant: small-caps;
+				font-family: "Verdana";
+				text-shadow: 0 0 12px rgba(255,255,255,1), 0 0 36px rgba(0,255,0,1);
+				color: orange;
+				text-decoration: overline;
+			}
+			
+			body{
+				background-color: lightblue;
+				background-image: url('https://www.textures.com/system/categories/75/frontend-large.jpg');
+				background-repeat: repeat-x;
+				background-position: left bottom;
+				background-size:50%;
+			}
+			
+			#output_text{ padding: 15px; }
+		</style>
+	</head>
+	<body>
+		<div id="logo"><a href="http://sportal.bg" target="_blank">Football Academy</a></div>
+		<input type="text" id="input_text" value="enter text here" />
+		<select id="font">
+			<option value="Verdana">font 1</option>
+			<option value="Consolas">font 2</option>
+			<option value="Arial">font 3</option>	
+		</select>
+		<input type="color" id="fcolor" value="#0000ff" />
+		<input type="color" id="bcolor" value="#ff0000" />
+		<input type="button" value="go" onclick="showResult();" />
+		<fieldset>
+			<legend>result</legend>
+			<div id="output_text"></div>
+		</fieldset>
+		<script>
+			function showResult(){
+				var inputText = document.getElementById("input_text").value;
+				var outputText = document.getElementById("output_text");
+				var fontFamily = document.getElementById('font');
+				var fontColor = document.getElementById("fcolor");
+				var backColor = document.getElementById("bcolor");
+				
+				outputText.innerHTML = inputText;
+				outputText.style.textTransform = "uppercase";
+				outputText.style.fontFamily = fontFamily.value;
+				outputText.style.color = fontColor.value;
+				outputText.style.backgroundColor = backColor.value;
+			}
+		</script>
+	</body>
+</html>
